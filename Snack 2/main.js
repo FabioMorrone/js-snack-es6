@@ -25,7 +25,9 @@ const squadre = [
         'falli_subiti' : 0, 
     }
 ]
-
+let punti_fatti = squadre[0]
+let falli_subiti = squadre[0]
+let tabellone = []
 
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 for (let i = 0; i < squadre.length; i++) {
@@ -35,3 +37,6 @@ for (let i = 0; i < squadre.length; i++) {
     let falli_subiti = Math.floor(Math.random() * 50)
     console.log(falli_subiti);
 }
+console.log(squadre, punti_fatti, falli_subiti );
+
+// creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
