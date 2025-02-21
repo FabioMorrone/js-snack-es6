@@ -26,7 +26,7 @@ let leggera = bici[0]
 for (let i = 0; i < bici.length; i++) {
     const singolaBici = bici[i];
     console.log(singolaBici);
-    // se le bici successive sono inferiori a bianchi seleziono la minora
+    // se le bici successive sono inferiori a bianchi seleziono la minore
     // salvo la minore 
     if (leggera.peso > singolaBici.peso){
         leggera = singolaBici
