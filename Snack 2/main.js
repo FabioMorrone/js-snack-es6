@@ -6,6 +6,7 @@ Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
+// Creare un array di oggetti di squadre di calcio.
 
 const squadre = [
     {
@@ -25,3 +26,12 @@ const squadre = [
     }
 ]
 
+
+// Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+for (let i = 0; i < squadre.length; i++) {
+    const questeSquadre = squadre[i];
+    let punti_fatti = Math.floor(Math.random() * 50)
+    console.log(punti_fatti);
+    let falli_subiti = Math.floor(Math.random() * 10)
+    console.log(punti_fatti);
+}
