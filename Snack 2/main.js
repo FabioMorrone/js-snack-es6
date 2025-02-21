@@ -37,6 +37,6 @@ for (let i = 0; i < squadre.length; i++) {
     let falli_subiti = Math.floor(Math.random() * 50)
     console.log(falli_subiti);
 }
-console.log(squadre, punti_fatti, falli_subiti );
+
 
 // creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
