@@ -6,19 +6,34 @@ Stampare a schermo la bici con peso minore.
 
 // Creare un array di oggetti
 
-const bici = [ 
+const bici = [
     {
-        nome : bianchi,
-        peso : 35,
+        nome: "bianchi",
+        peso: 35,
     },
     {
-        nome : cannondale,
-        peso : 43,
+        nome: "cannondale",
+        peso: 43,
     },
     {
-        nome : santaCruz,
-        peso : 21,
+        nome: "santaCruz",
+        peso: 21,
     }
 ]
+
+let leggera = bici[0]
+
+for (let i = 0; i < bici.length; i++) {
+    const singolaBici = bici[i];
+    console.log(singolaBici);
+    // se le bici successive sono inferiori a bianchi seleziono la minora
+    // salvo la minore 
+    if (leggera.peso > singolaBici.peso){
+        leggera = singolaBici
+
+    }
+}
+
+console.log(leggera);
 
 
